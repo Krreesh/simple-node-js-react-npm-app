@@ -1,10 +1,6 @@
 pipeline {
-    agent {
-        docker {
-            image 'node:16.19.0-bullseye'
-            args '-p 3000:3000'
-        }
-    }
+    agent none
+    tool node 'node16'
     environment {
         CI = 'true'
     }
