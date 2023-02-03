@@ -1,6 +1,6 @@
 pipeline {
-    agent none
-    tool node 'node16'
+    agent any
+    
     environment {
         CI = 'true'
     }
